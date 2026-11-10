@@ -1,0 +1,21 @@
+{
+  "name": "wom-sanity-sync",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "sync": "node --env-file-if-exists=.env sync.ts",
+    "dry-run": "node --env-file-if-exists=.env sync.ts --dry-run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sanity/client": "^8.15.0",
+    "@wise-old-man/utils": "^4.0.28"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
